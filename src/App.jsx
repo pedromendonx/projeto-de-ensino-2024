@@ -4,31 +4,14 @@ import './App.css';
 import Home from './componentes/Menu/Home';
 import About from './componentes/Menu/About';
 import Contact from './componentes/Menu/Contact';
+import Menu from './componentes/Menu/Menu';
 
 function App() {
   return (
     <Router>
       <div>
         {/* Menu de navegação */}
-        <nav>
-          <ul>
-            <li>
-              <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>
-                Contact
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
+       <Menu></Menu>
 
         {/* Rotas */}
         <Routes>
