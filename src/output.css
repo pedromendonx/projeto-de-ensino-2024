@@ -1,0 +1,73 @@
+/* Estilo geral do menu */
+
+nav {
+  position: fixed;
+  /* Fixa o menu no topo */
+  top: 0;
+  /* Alinha o menu ao topo */
+  left: 0;
+  /* Alinha o menu à esquerda */
+  width: 100%;
+  /* Faz o menu ocupar toda a largura */
+  background-color: #0078d4;
+  /* Cor de fundo */
+  padding: 10px 20px;
+  display: flex;
+  /* Usa Flexbox */
+  justify-content: flex-start;
+  /* Alinha os itens à esquerda */
+  align-items: center;
+  /* Centraliza verticalmente os itens */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Sombra */
+  z-index: 1000;
+  /* Garante que o menu fique acima de outros elementos */
+}
+
+/* Lista do menu */
+
+nav ul {
+  list-style: none;
+  /* Remove os marcadores padrão */
+  display: flex;
+  /* Alinha os itens na horizontal */
+  gap: 20px;
+  /* Espaçamento entre os links */
+  margin: 0;
+  padding: 0;
+}
+
+/* Links do menu */
+
+nav a {
+  text-decoration: none;
+  /* Remove o sublinhado */
+  color: white;
+  /* Cor do texto */
+  font-weight: bold;
+  padding: 10px 15px;
+  /* Espaçamento interno dos links */
+  border-radius: 5px;
+  /* Arredonda os cantos */
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito hover */
+
+nav a:hover {
+  background-color: #005a9e;
+  /* Cor ao passar o mouse */
+}
+
+/* Página ativa */
+
+nav a.active {
+  background-color: #003f74;
+}
+
+/* Para evitar que o conteúdo da página fique escondido atrás do menu */
+
+body {
+  padding-top: 60px;
+  /* Ajuste conforme a altura do menu */
+}
