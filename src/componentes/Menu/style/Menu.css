@@ -1,0 +1,76 @@
+/* Estilos básicos */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+  
+  /* Botão de abrir/fechar o menu */
+  .menu-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  /* Links do menu */
+  .menu-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Organiza links em coluna */
+    gap: 1rem;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    max-height: 0; /* Menu fechado inicialmente */
+  }
+  
+  .menu-links.open {
+    max-height: 500px; /* Abre o menu (ajuste conforme necessário) */
+  }
+  
+  .menu-links a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .menu-links a:hover {
+    color: #f0a500; /* Cor ao passar o mouse */
+  }
+  
+  /* Modo desktop */
+  @media (min-width: 768px) {
+    .menu {
+      flex-direction: row; /* Alinha itens horizontalmente no desktop */
+      justify-content: flex-start; /* Mantém alinhado à esquerda */
+      padding: 1rem 2rem; /* Ajusta o espaçamento */
+    }
+  
+    .menu-toggle {
+      display: none; /* Esconde o botão no desktop */
+    }
+  
+    .menu-links {
+      flex-direction: row; /* Links na horizontal */
+      gap: 2rem; /* Espaço maior entre os itens */
+      max-height: none; /* Sempre visível no desktop */
+    }
+  }
+  
