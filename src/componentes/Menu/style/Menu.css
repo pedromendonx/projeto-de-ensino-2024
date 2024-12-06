@@ -35,15 +35,15 @@
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column; /* Organiza links em coluna */
+    flex-direction: column; 
     gap: 1rem;
     transition: max-height 0.3s ease-in-out;
     overflow: hidden;
-    max-height: 0; /* Menu fechado inicialmente */
+    max-height: 0; 
   }
   
   .menu-links.open {
-    max-height: 500px; /* Abre o menu (ajuste conforme necessário) */
+    max-height: 500px; 
   }
   
   .menu-links a {
@@ -52,25 +52,25 @@
   }
   
   .menu-links a:hover {
-    color: #f0a500; /* Cor ao passar o mouse */
+    color: #f0a500;
   }
   
   /* Modo desktop */
   @media (min-width: 768px) {
     .menu {
-      flex-direction: row; /* Alinha itens horizontalmente no desktop */
-      justify-content: flex-start; /* Mantém alinhado à esquerda */
-      padding: 1rem 2rem; /* Ajusta o espaçamento */
+      flex-direction: row; 
+      justify-content: flex-start; 
+      padding: 1rem 2rem; 
     }
   
     .menu-toggle {
-      display: none; /* Esconde o botão no desktop */
+      display: none; 
     }
   
     .menu-links {
-      flex-direction: row; /* Links na horizontal */
-      gap: 2rem; /* Espaço maior entre os itens */
-      max-height: none; /* Sempre visível no desktop */
+      flex-direction: row; 
+      gap: 2rem; 
+      max-height: none; 
     }
   }
   

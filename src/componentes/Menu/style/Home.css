@@ -7,6 +7,8 @@ html, body {
 
 /* Estilos gerais */
 .home {
+    position: absolute;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,17 +20,9 @@ html, body {
     background-color: #f5f5f5;
   }
   
-
-  .home-content {
-    margin-top: 500px; /* Ou o valor que você desejar */
-    width: 100%;
-    height: calc(100vh - 500px); /* Subtraí a altura do menu */
-  }
-  
-  
   /* Cabeçalho */
   .home-header {
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     background-color: #f8b400;
     color: white;
@@ -55,20 +49,20 @@ html, body {
   
   /* Categorias */
   .categories {
-    width: 100%; /* Adapta a largura ao tamanho da tela */
-    max-width: 1200px; /* Limita o tamanho em telas grandes */
+    width: 100%; 
+    max-width: 1200px; 
     margin: 2rem 0;
   }
   
   .category-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Grid responsivo */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
     gap: 1rem;
   }
   
   .category-card {
     background-color: #ffe0b3;
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
     border-radius: 5px;
     font-weight: bold;
@@ -78,7 +72,7 @@ html, body {
   
   .category-card:hover {
     background-color: #ffd27f;
-    transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+    transform: scale(1.05); 
   }
   
   /* Receitas populares */
@@ -90,7 +84,7 @@ html, body {
   
   .recipe-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid responsivo */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     gap: 1.5rem;
   }
   
@@ -133,10 +127,10 @@ html, body {
   /* Responsividade adicional */
   @media (max-width: 480px) {
     .home-header {
-      padding: 1rem; /* Menor padding em telas muito pequenas */
+      padding: 1rem; 
     }
     .category-grid, .recipe-grid {
-      grid-template-columns: repeat(2, 1fr); /* Ajusta o grid para duas colunas */
+      grid-template-columns: repeat(2, 1fr); 
     }
   }
   
