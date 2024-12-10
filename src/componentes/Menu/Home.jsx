@@ -1,13 +1,17 @@
 import React from 'react';
 import './style/Home.css'; // Certifique-se de criar o arquivo CSS correspondente
-
+import buchoLogo from './img/bucho.png';
+import frola from './img/frola.jpg'
 function Home() {
   return (
     <div className="home">
       {/* Cabeçalho com um banner */}
       <header className="home-header">
+        <img src={buchoLogo} alt="Logo do Bucho Cheio" className='logo' />
+        <div className='text'>
         <h1>Bem-vindo ao Bucho Cheio!</h1>
         <p>Encontre receitas deliciosas para todas as ocasiões!</p>
+        </div>
         <button className="explore-button">Explore Receitas</button>
       </header>
 
@@ -27,8 +31,8 @@ function Home() {
         <h2>Receitas Populares</h2>
         <div className="recipe-grid">
           <div className="recipe-card">
-            <img src="https://via.placeholder.com/150" alt="Receita 1" />
-            <h3>Bolo de Chocolate</h3>
+            <img src={frola} alt="Receita 1" />
+            <h3>Pasta Frola</h3>
           </div>
           <div className="recipe-card">
             <img src="https://via.placeholder.com/150" alt="Receita 2" />
@@ -40,16 +44,7 @@ function Home() {
           </div>
         </div>
       </section>
-
-      {/* Campo de busca */}
-      <section className="search-section">
-        <h2>Busca Rápida</h2>
-        <input
-          type="text"
-          placeholder="Busque receitas por nome ou ingrediente..."
-          className="search-input"
-        />
-      </section>
+    
     </div>
   );
 }

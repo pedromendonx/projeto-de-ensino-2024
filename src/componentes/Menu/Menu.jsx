@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './style/Menu.css'; // Certifique-se de que o arquivo de estilos está correto
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +16,7 @@ const Menu = () => {
     <nav className="menu">
       {/* Botão para abrir/fechar o menu no mobile */}
       <button className="menu-toggle" onClick={toggleMenu}>
-        {isOpen ? '✖' : '☰'} {/* Ícones para abrir/fechar */}
+        ☰ {/* Ícone de hambúrguer */}
       </button>
 
       {/* Menu de navegação */}
@@ -22,7 +25,17 @@ const Menu = () => {
         <li><Link to="/about">Sobre</Link></li>
         <li><Link to="/contact">Contatos</Link></li>
       </ul>
+
+      <section className="search-section">
+      <FontAwesomeIcon icon={faSearch} className="search-icon" />
+        <input
+          type="text"
+          placeholder="Busque receitas por nome ou ingrediente..."
+          className="search-input"
+        />
+      </section>
     </nav>
+ 
   );
 };
 
