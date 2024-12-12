@@ -2,6 +2,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 
@@ -31,7 +32,7 @@ html, body {
 .home-header {
   padding: 1rem;
   text-align: center;
-  background-color: #f8b400;
+  background-color: #f98404;
   color: white;
   width: 100%;
   border-radius: 0 0 8px 8px;
@@ -46,7 +47,7 @@ html, body {
 
 
 .explore-button {
-  background-color: #ff6700;
+  background-color: #f8d2aa;
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
