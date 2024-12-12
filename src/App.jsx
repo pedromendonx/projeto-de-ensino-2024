@@ -6,23 +6,27 @@ import About from './componentes/Menu/About';
 import Contact from './componentes/Menu/Contact';
 import Menu from './componentes/Menu/Menu';
 import Receita from './componentes/Menu/Receita';
+import Footer from './componentes/Footer/Footer';
 
 function App() {
   return (
     <Router>
-    <div>
-      {/* Menu de navegação */}
-     <Menu></Menu>
+      <div>
+        {/* Menu de navegação */}
+        <Menu />
 
-      {/* Rotas */}
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/recipe/:id" element={<Receita />} />
-      </Routes>
-    </div>
-  </Router>
+        {/* Rotas */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/recipe/:id" element={<Receita />} />
+        </Routes>
+
+        {/* Footer fixo */}
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

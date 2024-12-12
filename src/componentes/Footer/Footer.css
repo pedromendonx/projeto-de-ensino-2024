@@ -1,0 +1,70 @@
+/* Arquivo CSS (Footer.css) */
+.footer {
+    background-color: #f97204;
+    color: #FFF8E7;
+    text-align: center;
+    padding: 15px 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 16px;
+    z-index: 1000;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+  }
+  
+  .footer-title {
+    color: #FFA500;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    text-align: justify;
+    padding: 0 15px;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+  
+  .footer-social {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .footer-link {
+    color: #FFA500;
+    text-decoration: none;
+  }
+
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-copyright {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #FFF8E7;
+  }
+  
