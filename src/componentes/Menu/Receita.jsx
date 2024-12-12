@@ -1,6 +1,9 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import './style/Receita.css';
+import frola from './img/frola.jpg';
+import pizzaCaseira from './img/pizza_caseira.jpg';
+import sucoDetox from './img/suco_detox.jpg';
 
 function RecipeDetails() {
   const { id } = useParams();
