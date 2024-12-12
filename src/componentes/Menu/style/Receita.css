@@ -1,0 +1,16 @@
+.recipe-details {
+    padding: 20px;
+  }
+  
+  .recipe-details img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .recipe-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  

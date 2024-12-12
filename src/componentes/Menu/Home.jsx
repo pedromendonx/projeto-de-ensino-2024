@@ -1,9 +1,10 @@
 import React from 'react';
-import './style/Home.css'; // Certifique-se de criar o arquivo CSS correspondente
+import './style/Home.css';
 import buchoLogo from './img/bucho.png';
 import frola from './img/frola.jpg';
 import pizzaCaseira from './img/pizza_caseira.jpg';
 import sucoDetox from './img/suco_detox.jpg';
+import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div className="home">
@@ -33,16 +34,22 @@ function Home() {
         <h2>Receitas Populares</h2>
         <div className="recipe-grid">
           <div className="recipe-card">
-           <a href="./componentes/Menu/Receita.jsx"> <button><img src={frola} alt="Receita 1" /></button> </a> 
+            <Link to="/recipe/1">
+            <img src={frola} alt="Receita 1" />
             <h3>Pasta Frola</h3>
-          </div> 
-          <div className="recipe-card">
-            <img src={pizzaCaseira} alt="Receita 2" />
-            <h3>Pizza Caseira</h3>
+            </Link>
           </div>
           <div className="recipe-card">
+            <Link to="/recipe/2">
+            <img src={pizzaCaseira} alt="Receita 2" />
+            <h3>Pizza Caseira</h3>
+            </Link>
+          </div>
+          <div className="recipe-card">
+            <Link to="/recipe/3">
             <img src={sucoDetox} alt="Receita 3" />
             <h3>Suco Detox</h3>
+            </Link>
           </div>
         </div>
       </section>
