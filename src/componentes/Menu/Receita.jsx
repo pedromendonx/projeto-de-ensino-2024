@@ -20,7 +20,7 @@ function RecipeDetails() {
   const recipes = {
     1: {
       title: 'Pasta Frola',
-      description: 'A pasta frola, mais do que uma simples sobremesa, é um símbolo da rica tradição culinária sul-americana.',
+      description: 'A pasta frola, mais do que uma simples sobremesa, é um símbolo da rica tradição culinária sul-americana. Portanto a história e variações da pasta frola sul-americana revelam uma tapeçaria complexa de sabores, técnicas e influências culturais. Desde sua origem, influenciada pela culinária italiana, até suas modernas interpretações regionais, cada aspecto da pasta frola conta uma história. Este artigo não apenas arranha a superfície, mas mergulha profundamente na essência da pasta frola, explorando detalhes frequentemente ignorados ou desconhecidos.',
       steps: [
         'Tempo de preparo: 45min',
         '1) Misture todos os ingredientes com as pontas dos dedos até formar uma massa lisa.',
