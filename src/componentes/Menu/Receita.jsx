@@ -53,18 +53,18 @@ function RecipeDetails() {
 
   return (
     <div className="recipe-details">
-      <h1>{recipe.title}</h1>
-      <img src={recipe.image} alt={recipe.title} />
-      <p>{recipe.description}</p>
+      <h1>{recipe.title}</h1> <br/>
+      <img src={recipe.image} alt={recipe.title} className='main-image'/> 
+      <p>{recipe.description}</p><br></br>
       <h2>Ingredientes:</h2>
      <ul>
         {recipe.ing.map((ingredient, index) => (
         <li key={index} style={{ display: 'flex', alignItems: 'center' }}>
          <img src={ingredient.image} alt={ingredient.name} style={{ width: '30px', height: '30px', marginRight: '10px',alignItems:'left' }} />
-        {ingredient.name}
-           </li>
+         <span>{ingredient.name}</span>
+        </li>
       ))}
-      </ul>
+      </ul> <br/>
       <h2>Modo de Preparo</h2>
       <ul>
         {recipe.steps.map((step, index) => (
