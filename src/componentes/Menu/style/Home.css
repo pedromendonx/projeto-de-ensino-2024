@@ -5,8 +5,6 @@ html, body {
   overflow-x: hidden;
 }
 
-
-/* Estilos gerais */
 .home {
   padding-top: 100px;
   display: flex;
@@ -28,7 +26,6 @@ html, body {
   margin-top: 25px; 
 }
 
-/* Cabeçalho */
 .home-header {
   padding: 1rem;
   text-align: center;
@@ -62,7 +59,6 @@ html, body {
   background-color: #ff4500;
 }
 
-/* Categorias */
 .categories {
   width: 100%; 
   max-width: 1200px; 
@@ -90,7 +86,6 @@ html, body {
   transform: scale(1.05); 
 }
 
-/* Receitas populares */
 .popular-recipes {
   width: 90%;
   max-width: 1200px;
@@ -124,7 +119,6 @@ html, body {
   color: #333;
 }
 
-/* Responsividade adicional */
 @media (max-width: 480px) {
   .home-header {
     padding: 1rem; 

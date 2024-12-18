@@ -5,10 +5,10 @@ import frola from './img/frola.jpg';
 import pizzaCaseira from './img/pizza_caseira.jpg';
 import sucoDetox from './img/suco_detox.jpg';
 import { Link } from 'react-router-dom';
+
 function Home() {
   return (
     <div className="home">
-      {/* Cabeçalho com um banner */}
       <header className="home-header">
         <img src={buchoLogo} alt="Logo do Bucho Cheio" className='logo' />
         <div className='text'>
@@ -18,7 +18,6 @@ function Home() {
         <button className="explore-button">Explore Receitas</button>
       </header>
 
-      {/* Seção de categorias */}
       <section className="categories">
         <h2>Categorias Populares</h2>
         <div className="category-grid">
@@ -29,7 +28,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Seção de receitas populares */}
       <section className="popular-recipes">
         <h2>Receitas Populares</h2>
         <div className="recipe-grid">

@@ -14,12 +14,9 @@ const Menu = () => {
 
   return (
     <nav className="menu">
-      {/* Botão para abrir/fechar o menu no mobile */}
       <button className="menu-toggle" onClick={toggleMenu}>
-        ☰ {/* Ícone de hambúrguer */}
       </button>
 
-      {/* Menu de navegação */}
       <ul className={`menu-links ${isOpen ? 'open' : ''}`}>
         <li><Link to="/">Página Inicial</Link></li>
         <li><Link to="/about">Sobre</Link></li>

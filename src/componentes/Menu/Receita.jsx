@@ -13,10 +13,10 @@ import leiteImg from './img/leite.webp';
 import pageone from './img/1.png';
 import pagetwo from './img/paget.png';
 
+
 function RecipeDetails() {
   const { id } = useParams();
 
-  // Dados fictícios para demonstração
   const recipes = {
     1: {
       title: 'Pasta Frola',
@@ -28,7 +28,7 @@ function RecipeDetails() {
         '3) Coloque o recheio e com o restante da massa faça tiras em diagonais intercalando-as.',
         '4) Leve ao forno médio por 25 minutos, ou até dourar.',
       ],
-      images: [frola, pageone, pagetwo], // Lista de imagens para o carrossel
+      images: [frola, pageone, pagetwo], 
       ing: [
         { name: '4 xícaras de trigo', image: trigo },
         { name: '4 colheres de sopa de margarina sem sal', image: margarinaImg },
@@ -42,13 +42,13 @@ function RecipeDetails() {
       title: 'Pizza Caseira',
       description: 'Pizza italiana caseira com tomate e manjericão.',
       steps: ['Prepare a massa', 'Espalhe o molho', 'Asse no forno por 15 minutos'],
-      images: [pizzaCaseira, frola, sucoDetox], // Lista de imagens para o carrossel
+      images: [pizzaCaseira],
     },
     3: {
       title: 'Suco Detox',
       description: 'Um suco saudável feito com abacaxi e gengibre.',
       steps: ['Misture os ingredientes no liquidificador', 'Coe, se necessário', 'Sirva gelado'],
-      images: [sucoDetox, pizzaCaseira, frola], // Lista de imagens para o carrossel
+      images: [sucoDetox], 
     },
   };
 
@@ -59,22 +59,26 @@ function RecipeDetails() {
   }
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [fade, setFade] = useState(false); // Controle da transição de fade
+  const [fade, setFade] = useState(false); 
 
   const nextImage = () => {
-    setFade(false); // Inicia a transição de fade
+    setFade(false); 
     setTimeout(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % recipe.images.length);
-      setFade(true); // Habilita a visibilidade da nova imagem
-    }, 500); // Aguarda 500ms para completar a transição
+      setFade(true); 
+    }, 500); 
   };
 
   const prevImage = () => {
-    setFade(false); // Inicia a transição de fade
+    setFade(false); 
     setTimeout(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex - 1 + recipe.images.length) % recipe.images.length);
-      setFade(true); // Habilita a visibilidade da nova imagem
-    }, 500); // Aguarda 500ms para completar a transição
+      setFade(true); 
+    }, 500); 
+  };
+
+  const redirectToYouTube = () => {
+    window.open('https://youtu.be/CqX0tsF4qT0?si=BZDxJAc46YVCaeAm', '_blank'); // Substitua pelo link desejado
   };
 
   return (
@@ -97,7 +101,11 @@ function RecipeDetails() {
         </button>
       </div>
       <p>{recipe.description}</p>
-      <br />
+
+    <button onClick={redirectToYouTube} className="youtube-button">
+        Assistir no YouTube
+    </button>
+  <br />
       <h2>Ingredientes:</h2>
       <ul>
         {recipe.ing.map((ingredient, index) => (

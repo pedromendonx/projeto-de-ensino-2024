@@ -1,11 +1,11 @@
-/* Estilo básico do menu */
+
 .menu {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #333;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -20,40 +20,37 @@
   margin: 0;
 }
 
-/* Botão de hambúrguer */
 .menu-toggle {
   font-size: 1.5rem;
   background: none;
   border: none;
-  color: white;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   margin-bottom: 5px;
 
 }
 
-/* Links do menu */
+
 .menu-links {
   list-style: none;
-  display: none; /* Começa escondido */
-  flex-direction: column; /* Empilha os links */
+  display: none;
+  flex-direction: column; 
   gap: 1rem;
   padding: 0;
   margin: 0;
   transition: max-height 0.3s ease-in-out;
   background-color: #333;
   position: absolute;
-  top: 100%; /* Aparece logo abaixo do cabeçalho */
+  top: 100%; 
   left: 0;
-  width: 100%; /* Preenche a largura */
+  width: 100%; 
   z-index: 1000;
 }
 
-/* Mostra o menu quando está aberto */
 .menu-links.open {
   display: flex;
 }
 
-/* Links individuais */
 .menu-links a {
   text-decoration: none;
   color: white;
@@ -64,7 +61,6 @@
   color: #f0a500;
 }
 
-/* Barra de pesquisa no menu */
 .search-section {
   display: flex;    
   justify-content: flex-start;     
@@ -83,24 +79,21 @@
 }
 
 .search-input {
-  padding: 0.5rem; /* Ajusta o preenchimento interno para deixá-lo menor */
-  width: 500px; /* Define um tamanho fixo mais compacto */
-  border: 1px solid #ccc; /* Estiliza a borda */
-  border-radius: 5px; /* Arredonda os cantos */
-  font-size: 0.9rem; /* Reduz o tamanho da fonte */
+  padding: 0.5rem; 
+  width: 500px;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  font-size: 0.9rem;
 }
 
 
 .search-input:focus {
-  outline: none; /* Remove o contorno padrão ao focar */
-  border-color: #ff6f61; /* Adiciona uma cor de destaque na borda */
+  outline: none; 
+  border-color: #ff6f61;
 }
 
-
-
-/* Estilo adicional para desktops */
 @media (min-width: 768px) {
-  /* Mostra o menu no formato hambúrguer no desktop */
+
   .menu {
     flex-direction: row; 
       justify-content: flex-start; 
@@ -108,7 +101,7 @@
   }
 
   .menu-links {
-    display: none; /* Continua escondido até clicar no botão */
+    display: none; 
   }
 
   /* .search-section {
