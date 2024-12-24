@@ -16,7 +16,6 @@ const Menu = () => {
     <nav className="menu">
       <button className="menu-toggle" onClick={toggleMenu}>
         {isOpen ? '✖' : '☰'} {/* Ícones para abrir/fechar */}
-        ☰ {/* Ícone de hambúrguer */}
       </button>
 
       <ul className={`menu-links ${isOpen ? 'open' : ''}`}>
